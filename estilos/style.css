@@ -180,6 +180,9 @@ div#gold > p {
 }
 
 /* EFEITOS DOS CARDS */
+div.foto.active {
+    transform: scale(1.1);
+}
 div.tenis:hover .foto {
     transform: translate(-1.0rem, -5rem) rotate(-20deg);
     transition: .5s;
