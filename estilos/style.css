@@ -184,9 +184,8 @@ div#gold > p {
 
 /* EFEITOS DOS CARDS */
 div.tenis:hover {
-    zoom: 105%;
     transform: translate(0.3rem, 0.4rem);
-    transition: .6s;
+    transition: .1s;
     transition-timing-function: ease;
 }
 div#fragment:hover {
