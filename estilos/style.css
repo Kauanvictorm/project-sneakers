@@ -19,74 +19,133 @@ gold: #e7d688
 body {
    background-color: gray;
 }
-section.modelos {
-    background-color: #DFD8cd;
-    width: 100vw;
-    height: 100vh;
+main.modelos {
+    background-image:linear-gradient(120deg, #e6e2e0,#DFD8cd);
+    width: 100%;
+    height: 100%;
 }
-section.modelos > h1 {
+main.modelos > h1 {
     font-family: "Nunito Sans", sans-serif;
     color: black;
-    font-size: 2em;
-    padding: 20px 0px 0px 20px;
+    font-size: 2.5em;
+    padding: 20px 0px 0px 10px;
     text-align: left;
 }
-section.modelos > h2 {
+main.modelos > h2 {
     font-family: "Nunito Sans", sans-serif;
     color: black;
     font-size: 1.8em;
     margin-top: 30px;
     text-align: center;
 }
-div.container {
+section.container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center; 
-    gap: 10px;
 
     width: 100%;
-    height: 600px;
+    height: 600%;
+    padding-top: 20px;
     margin: auto;
 }
 div.tenis {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+}
+div.tenis > h3 {
+    position: absolute;
+    top: 50%;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+}
 
-    
-    background-color: white;
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;  
-}
 div#fragment {
+    position: relative;
     background-color: #0477c9;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px #0477c980;
 }
-div#fragment > img#fimg {
+div#fragment > div#fimg {
+    background-image: url('../imagens/travis-fragment.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5%;
+    left: 18%;
+
+    background-size: 200px 100px;
+    width: 100%;
+    height: 100px;
+}
+div#fragment > h3 {
+    color: #E4D9C2;
+    
 
 }
 
 
 div#mocha {
+    position: relative;
     background-color: #4D4742;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px #4d474291;
 }
-div#mocha > img#mimg {
+div#mocha > div#mimg {
+    background-image: url('../imagens/travis-mocha.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5%;
+    left: 18%;
 
+    background-size: 200px 100px;
+    width: 100%;
+    height: 100px;
+}
+div#mocha > h3 {
+    color: #E4D9C2;
 }
 
 
 div#phantom {
-    background-color: #717471;
+    position: relative;
+    background-color: #a5a5a5;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px #a5a5a591;
 }
-div#phantom > img#pimg {
+div#phantom > div#pimg {
+    background-image: url('../imagens/travis-blackphantom.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5%;
+    left: 18%;
 
+    background-size: 200px 100px;
+    width: 100%;
+    height: 100px;
 }
-
+div#phantom > h3 {
+    margin-left: 2px;
+    color: #494949;
+}
 
 div#gold {
-    background-color: #e7d688;
+    position: relative;
+    background-color: #f0e8bf;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px #f0e8bfc4;
 }
-div#gold > img#yimg {
+div#gold > div#gimg {
+    background-image: url('../imagens/travis-goldyellow.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5%;
+    left: 18%;
 
+    background-size: 200px 100px;
+    width: 100%;
+    height: 100px;
+}
+div#gold > h3 {
+    color: #645203;
 }
