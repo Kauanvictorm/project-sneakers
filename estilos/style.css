@@ -26,15 +26,21 @@ main.modelos {
 }
 main.modelos > h1 {
     font-family: "Nunito Sans", sans-serif;
-    color: black;
-    font-size: 2.5em;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
     padding: 20px 0px 0px 10px;
-    text-align: left;
+    text-align: center;
+}
+main.modelos h1 > hr {
+    width: 80%;
+    height: 1px;
+    margin: auto;
+    background-color: black;
 }
 main.modelos > h2 {
     font-family: "Nunito Sans", sans-serif;
-    color: black;
-    font-size: 1.8em;
+    color: rgba(0, 0, 0, 0.692);
+    font-size: 1.5em;
     margin-top: 30px;
     text-align: center;
 }
@@ -50,15 +56,25 @@ section.container {
     margin: auto;
 }
 div.tenis {
-    margin-top: 20px;
+    margin: 20px 0px;
     width: 300px;
-    height: 300px;
+    height: 320px;
 }
 div.tenis > h3 {
     position: absolute;
     top: 50%;
     font-family: "Nunito Sans", sans-serif;
     text-align: center;
+}
+p.descricao {
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    font-size: 0.8em;
+    width: 80%;
+    height: 100px;
+    margin:0px 10px;
+    opacity: 0;
 }
 
 div#fragment {
@@ -73,15 +89,17 @@ div#fragment > div#fimg {
     position: absolute;
     top: 5%;
     left: 18%;
-
+    
     background-size: 200px 100px;
     width: 100%;
     height: 100px;
 }
 div#fragment > h3 {
     color: #E4D9C2;
-    
-
+}
+div#fragment > p {
+    color: #E2DFDA;
+    font-weight: bolder;
 }
 
 
@@ -97,7 +115,7 @@ div#mocha > div#mimg {
     position: absolute;
     top: 5%;
     left: 18%;
-
+    
     background-size: 200px 100px;
     width: 100%;
     height: 100px;
@@ -105,7 +123,10 @@ div#mocha > div#mimg {
 div#mocha > h3 {
     color: #E4D9C2;
 }
-
+div#mocha > p {
+    color: #E2DFDA;
+    font-weight: bolder;
+}
 
 div#phantom {
     position: relative;
@@ -119,7 +140,7 @@ div#phantom > div#pimg {
     position: absolute;
     top: 5%;
     left: 18%;
-
+    
     background-size: 200px 100px;
     width: 100%;
     height: 100px;
@@ -127,6 +148,10 @@ div#phantom > div#pimg {
 div#phantom > h3 {
     margin-left: 2px;
     color: #494949;
+}
+div#phantom > p {
+    color: #373532;
+    font-weight: bolder;
 }
 
 div#gold {
@@ -141,11 +166,33 @@ div#gold > div#gimg {
     position: absolute;
     top: 5%;
     left: 18%;
-
+    
     background-size: 200px 100px;
     width: 100%;
     height: 100px;
 }
 div#gold > h3 {
     color: #645203;
+}
+div#gold > p {
+    color: #6B6056;
+    font-weight: bolder;
+}
+
+/* EFEITOS DOS CARDS */
+div.tenis:hover .foto {
+    transform: translate(-1.0rem, -5rem) rotate(-20deg);
+    transition: .5s;
+    transition-timing-function: ease;
+}
+div.tenis:hover > h3 {
+    transform: translateY(-4.5rem);
+    transition: .5s;
+    transition-timing-function: ease;
+    margin-bottom: 0;
+}
+div.tenis:hover .descricao {
+    transition: .5s;
+    transition-timing-function: ease;
+    opacity: 1;
 }
