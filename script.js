@@ -1,11 +1,9 @@
-var cards = document.getElementsByClassName('foto');
-
-for (var i = 0; i < cards.length; i++) {
-    cards[i].addEventListener('touchstart', function() {
-        this.classList.add('active');
+function toggleActive(card) {
+    const cards = document.querySelectorAll('.tenis');
+    cards.forEach(c => {
+        if (c !== card) {
+            c.classList.remove('active');
+        }
     });
-
-    cards[i].addEventListener('touchend', function() {
-        this.classList.remove('active');
-    });
+    card.classList.toggle('active');
 }
