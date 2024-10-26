@@ -4,6 +4,9 @@
     .modelos > h1 {
         font-size: 2.5em;
     }
+    .modelos > img {
+        margin-left: 150px;
+    }
     .modelos > h2 {
         font-size: 2em;
     }
@@ -22,9 +25,13 @@
     .modelos > h1 {
         font-size: 3.5em;
     }
+    .modelos > img {
+        margin-left: 150px;
+    }
     .modelos > h2 {
         font-size: 2.5em;
     }
+
     section.container {
         display: flex;
         flex-direction: row;
